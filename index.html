@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pf.css">
+  
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()" style="color: rgb(255, 255, 255); "></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" style="color: rgb(255, 255, 255);"></i>
+            </nav>
+            <div class="header-text">
+                <h1 id="typewriter">
+                    Hi, I'm <span id="name">Kavindu</span> <br>
+                    A <span id="role">Computer Engineering</span> <br>
+                    Undergraduate, <br>
+                    <span id="role">UI/UX, Graphic Designer</span> <br>
+                    and <br>
+                    <span id="desc">Video Editor</span>
+                </h1>
+            </div></div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/back2.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <br>
+                    <p>I'm Kavindu Sanjitha, a <span id="sp1">Computer Engineering undergraduate</span> at the Faculty of Engineering, University of Ruhuna. I am a passionate Graphic/UI/UX Designer, Video Editor, and aspiring Web Developer and Designer. With a keen eye for design and a strong commitment to creating visually appealing and user-friendly websites, I bring a unique blend of creativity and technical expertise to every project.</p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Designing</span><br>Designing Websites</li>
+                            <li><span>Graphic Designing</span><br>Designing eye catchy designs</li>
+                            <li><span>UI/UX</span><br>Designing Web User interfaces</li>
+                            <li><span>Video Editing</span><br>Skilled in creative video editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Designing Websites</li>
+                            <li><span>2020 - Current</span><br>Graphic Designing</li>
+                            <li><span>2022 - current</span><br>Designing Web UI</li>
+                            <li><span>2022 - current</span><br>Video Editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2007 - 2012</span><br>Primary Education from Shri Saddananda Vidyalaya</li>
+                            <li><span>2012 - 2021</span><br>Secondary Education from T.B.M Herath Secondary College</li>
+                            <li><span>2022 - current</span><br>Higher Education at University of Ruhuna, Faculty of Engineering</li>
+<br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="services-container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                <i class="fa-solid fa-crop"></i>
+                    <h2>Web design</h2>
+                    <p id="p2">Crafting intuitive and responsive websites using HTML, CSS, and JavaScript. Focused on creating visually appealing layouts and user-friendly interfaces that enhance user experience and accessibility.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i> <br>
+                    <h2>Web development</h2>
+                    <p id="p2">Developing functional and scalable websites, ensuring seamless performance and integration of interactive features. Proficient in optimizing code, troubleshooting issues, and delivering robust web solutions tailored to specific client needs.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX design</h2>
+                    <p id="p2">Designing user-centric interfaces using Figma to deliver aesthetically pleasing and intuitive experiences. Expertise in wireframes, prototypes, and user flows to ensure functionality aligns with user expectations and business goals.</p>
+                
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic design & Video editing</h2>
+                    <p id="p2">Crafting compelling visual content and dynamic videos using Photoshop, Illustrator, Premiere Pro, After Effects, and CapCut. Specializing in branding, promotional materials, storytelling, visual effects, and professional-grade video production to captivate and engage audiences.
+</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+/* 
+ <!-- Portfolio --> */
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/p3.jpg" alt="Work 1">
+                <div class="layer">
+                    <h3>Stem Spark</h3>
+                    <p>I contributed as a volunteer to the design team for *STEM Spark*, a program organized by the WIE Affinity Group under the IEEE Student Branch at the University of Ruhuna.</p>
+                    <br>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p4.jpg" alt="Work 2">
+                <div class="layer">
+                    <h3>Eminence 4.0</h3>
+                    <p>I contributed as a volunteer to the design team for *Eminence 4.0*, a program organized by the WIE Affinity Group under the IEEE Student Branch at the University of Ruhuna.</p>
+                    <br>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p2.jpg" alt="Work 3">
+                <div class="layer">
+                    <h3>IEEE open recruitment for volunteering</h3>
+                    <p>I contributed as a volunteer to the design team for IEEE student branch university of Ruhuna</p>
+                    <br>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p1.jpg" alt="Work 3">
+                <div class="layer">
+                    <h3>Mehewara Project</h3>
+                    <p>I contributed as a volunteer to the design team for Mehewara Project</p>
+                    <br>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Kavi-Z" class="btn">See More in <i class="fa-brands fa-github"></i></a>
+    </div>
+</div>
+
+
+/* <!-- ...........contact>>>>>>>>> --> */
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p id="mail"><i class="fa-solid fa-paper-plane"></i>kavindusanga1331@gmail.com</p>
+                <p id="nmb"><i class="fa-solid fa-phone"></i>070 285 1411</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100089113240667&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> </a>
+                    <a href="https://www.linkedin.com/in/kavindu-sanjitha-41807226b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a> 
+                    <a href="https://www.instagram.com/kavindu_sanjitha/profilecard/?igsh=MXU1M3U2ZmNhOGN5bg=="><i class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://x.com/KavinduSanga"><i class="fa-brands fa-twitter"></i> </a>
+                </div>
+            </div>
+            
+
+          
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> <br>">
+                    <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+        <div class="copyright">
+            <p id="cpr">Copyright © Kavindu Sanjitha</p>
+        </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyR9Lb5Qj04MVOp2ZcxIuEnkp7nUYFWb5ETyvZ76n4Df5ZRbV-3--EBnS2B52peJsVLug/exec'
+        const form = document.forms['submit-to-google-sheet']
+     
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+
+    <script>
+const typewriter = document.getElementById("typewriter");
+const content = `Hi, I'm <span style="color: blue;">Kavindu</span> <br>A Computer Engineering <br>Undergraduate, <br>UI/UX, Graphic Designer <br>and <br>Video Editor`;
+let charIndex = 0;
+
+function typeEffect() {
+    if (charIndex < content.length) {
+      
+        if (content[charIndex] === "<") {
+            while (content[charIndex] !== ">" && charIndex < content.length) {
+                charIndex++;
+            }
+        }
+        charIndex++;  
+        typewriter.innerHTML = content.slice(0, charIndex);
+        setTimeout(typeEffect, 100);  
+    } else {
+         
+        setTimeout(() => {
+            charIndex = 0;
+            typewriter.innerHTML = "";  
+            typeEffect();
+        }, 1000);  
+    }
+}
+
+typeEffect();
+   </script>
+
+   <script>const typewriterElement = document.getElementById('typewriter');
+    const text = typewriterElement.innerHTML;
+    typewriterElement.innerHTML = '';
+    
+    let i = 0;
+    const speed = 100; // Speed of typing (in milliseconds)
+    
+    function typeWriter() {
+        if (i < text.length) {
+            typewriterElement.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    
+    // Start the typing effect
+    window.onload = typeWriter;
+    </script>
+</body>
+</html>
